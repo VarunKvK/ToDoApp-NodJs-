@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day</title>
+  </head>
+  <body>
+    <div class="date-container">
+      <h1 class="calender-text"><%= todayDay %></h1>
+    </div>
+    <ul>
+      <% for(i=0;i<todolists.length;i++ ){%>
+      <li><%= todolists[i] %></li>
+      <% } %>
+    </ul>
+    <div class="todo-container">
+      <form action="/" method="post">
+        <div class="input-container">
+          <input
+            type="text"
+            name="todo"
+            class="text-content"
+            placeholder="Enter Task"
+          />
+          <button type="submit" name="button">+</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
