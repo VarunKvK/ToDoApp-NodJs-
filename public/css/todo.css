@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  background-color: #1c81a8;
+}
+
+.date-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.date-container .date {
+  background-color: rgb(157, 207, 252);
+  width: 45%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.date-container .date .calender-text {
+  color: rgb(29, 103, 168);
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-container .list-item {
+  width: 28%;
+  box-shadow: 4px 10px 30px -20px rgba(41, 141, 228, 0.418);
+}
+.list-container .list-item .item-container {
+  height: 4rem;
+  display: flex;
+}
+.list-container .list-item .item-container:last-child {
+  margin-bottom: 0rem;
+}
+.list-container .list-item .list {
+  padding-left: 1rem;
+}
+.list-container .list-item p {
+  text-transform: uppercase;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+.list-container .list-item input:checked + p {
+  text-decoration: line-through;
+}
+
+.todo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-container .todo .input-container {
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+}
+.todo-container .todo .input-container input {
+  height: 3rem;
+  width: 20rem;
+  padding-left: 0.5rem;
+}
+.todo-container .todo .input-container input:focus {
+  outline: #0096d1 solid 1px;
+}
+.todo-container .todo .input-container button {
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  background-color: #0096d1;
+  color: #fff;
+}/*# sourceMappingURL=todo.css.map */

@@ -1,0 +1,100 @@
+body{
+    height: 100vh;
+    background-color: #1c81a8;
+}
+.date-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: aquamarine;
+    padding: 2rem;
+
+    .date {
+        background-color: rgb(157, 207, 252);
+        width: 45%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        .calender-text {
+            color:  rgb(29, 103, 168);
+            // width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // background-color: red;
+    .list-item {
+        width: 28%;
+        box-shadow: 4px 10px 30px -20px rgba(41, 141, 228, 0.418);
+
+        .item-container {
+            height: 4rem;
+            display: flex;
+
+        }
+
+        .item-container:last-child {
+            margin-bottom: 0rem;
+        }
+
+        .list {
+            padding-left: 1rem;
+        }
+
+        p {
+            text-transform: uppercase;
+            margin: 0;
+            display: grid;
+            place-items: center;
+        }
+
+        input:checked+p {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.todo-container {
+    // height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .todo {
+        .input-container {
+            width: 100%;
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+
+            input {
+                height: 3rem;
+                width: 20rem;
+                padding-left: .5rem;
+                &:focus{
+                    outline: #0096d1 solid 1px;
+                }
+            }
+
+
+            button {
+                border: none;
+                height: 3rem;
+                width: 3rem;
+                font-size: 1.5rem;
+                background-color: #0096d1;
+                color: #fff;
+            }
+        }
+    }
+}
